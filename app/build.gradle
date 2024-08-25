@@ -1,3 +1,4 @@
+
 plugins {
     id 'com.android.application'
 }
@@ -40,8 +41,10 @@ dependencies {
     implementation 'com.orhanobut:logger:2.2.0' // for debugging
 
     // [-] Local Modules ----------------------------------------------------------
-    //implementation project(path: ':droidhelpers')
-    implementation 'com.github.rochdi-wafik:DroidHelpers:1.0'
+    implementation project(path: ':droidhelpers')
+    //implementation 'com.github.rochdi-wafik:DroidHelpers:1.0'
+    //implementation 'com.github.rochdi-wafik:DroidHelpers:1.0'
+
 
 
 
