@@ -37,10 +37,6 @@ dependencies {
     // [-] Logger ------------------------------------------------------------
     implementation 'com.orhanobut:logger:2.2.0' // for debugging
 
-    // [-] HTML-TextView -----------------------------------------------------
-    implementation 'org.sufficientlysecure:html-textview:4.0'   //implementation libs.html.textview
-
-
     // [-] Gson to convert between Model & Json (simpleDB)
     implementation 'com.google.code.gson:gson:2.10.1'  //implementation libs.gson
 
@@ -72,25 +68,8 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.rochdi-wafik'
                 artifactId = 'DroidHelpers'
-                version = '1.2'
-
-//                afterEvaluate {
-//                    from components.release
-//                }
+                version = '1.3'
             }
         }
     }
 }
-//publishing {
-//    publications {
-//        release(MavenPublication) {
-//            groupId = 'com.rochdi-wafik'
-//            artifactId = 'DroidHelpers'
-//            version = '1.1'
-//
-//            afterEvaluate {
-//                from components.release
-//            }
-//        }
-//    }
-//}

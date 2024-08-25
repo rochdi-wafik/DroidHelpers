@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Main -->
+    <color name="black">#000000</color>
+    <color name="White">#FFFFFF</color>
+
     <!-- Alert Secondary -->
     <color name="background_default">#50636B77</color>
     <color name="border_default">#45636B77</color>

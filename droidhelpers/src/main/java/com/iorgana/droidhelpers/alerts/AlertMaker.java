@@ -13,9 +13,9 @@ import androidx.core.content.res.ResourcesCompat;
 
 import com.iorgana.droidhelpers.R;
 
-import org.sufficientlysecure.htmltextview.HtmlFormatter;
-import org.sufficientlysecure.htmltextview.HtmlFormatterBuilder;
-import org.sufficientlysecure.htmltextview.HtmlResImageGetter;
+import com.iorgana.droidhelpers.htmltextview.HtmlFormatter;
+import com.iorgana.droidhelpers.htmltextview.HtmlFormatterBuilder;
+import com.iorgana.droidhelpers.htmltextview.HtmlResImageGetter;
 
 public class AlertMaker {
     public interface OnCloseListener{
