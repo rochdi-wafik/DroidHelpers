@@ -40,7 +40,9 @@ dependencies {
     implementation 'com.orhanobut:logger:2.2.0' // for debugging
 
     // [-] Local Modules ----------------------------------------------------------
-    implementation project(path: ':droidhelpers')
+    //implementation project(path: ':droidhelpers')
+    implementation 'com.github.rochdi-wafik:DroidHelpers:1.0'
+
 
 
     // [-] Android dependencies ----------------------------------------------------
