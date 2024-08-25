@@ -1,0 +1,57 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace 'com.iorgana.droidhelpers'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 21
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+
+    // [-] Logger ------------------------------------------------------------
+    implementation 'com.orhanobut:logger:2.2.0' // for debugging
+
+    // [-] HTML-TextView -----------------------------------------------------
+    implementation 'org.sufficientlysecure:html-textview:4.0'   //implementation libs.html.textview
+
+
+    // [-] Gson to convert between Model & Json (simpleDB)
+    implementation 'com.google.code.gson:gson:2.10.1'  //implementation libs.gson
+
+    // [-] Apache IO -----------------------------------------------------
+    implementation 'commons-io:commons-io:2.16.1'
+
+    // [-] Android Security (EncryptedSharedPreferences)
+    implementation 'androidx.security:security-crypto:1.1.0-alpha06'
+
+
+
+
+    // [-] Android Libraries ---------------------------------------------------
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.preference:preference:1.2.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+}
